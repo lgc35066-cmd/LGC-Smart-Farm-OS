@@ -1,13 +1,26 @@
-function welcome() {
+function irrigate(){
 
-    document.getElementById("result").innerHTML =
-        "✅ مرحبًا بك في LGC Smart Farm OS Demo v0.1";
+document.getElementById("result").innerHTML =
+"💧 تم تشغيل الري للقطاع 02 بنجاح - مدة التشغيل 15 دقيقة";
 
 }
 
-// تحديث تجريبي كل 5 ثوانٍ
-setInterval(function () {
 
-    console.log("LGC System Running...");
+// محاكاة مراقبة النظام
 
-}, 5000);
+setInterval(function(){
+
+console.log("LGC AI Monitoring...");
+
+},5000);
+
+
+// رسالة ترحيبية عند فتح النظام
+
+window.onload = function(){
+
+console.log(
+"LGC Smart Farm OS Demo v0.2 Running"
+);
+
+};
