@@ -1,26 +1,37 @@
 function irrigate(){
 
 document.getElementById("result").innerHTML =
-"💧 تم تشغيل الري للقطاع 02 بنجاح - مدة التشغيل 15 دقيقة";
+"💧 تم تشغيل الري بنجاح";
 
 }
 
 
-// محاكاة مراقبة النظام
+// تحديث مؤشرات النظام
 
 setInterval(function(){
 
-console.log("LGC AI Monitoring...");
+let water =
+Math.floor(Math.random()*10)+80;
 
-},5000);
+let energy =
+Math.floor(Math.random()*10)+90;
 
-
-// رسالة ترحيبية عند فتح النظام
-
-window.onload = function(){
 
 console.log(
-"LGC Smart Farm OS Demo v0.2 Running"
+"LGC Monitoring",
+water,
+energy
+);
+
+
+},3000);
+
+
+
+window.onload=function(){
+
+console.log(
+"LGC Smart Farm OS Demo v0.4 Running"
 );
 
 };
