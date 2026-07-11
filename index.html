@@ -1,25 +1,121 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>LGC Smart Farm OS</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
+<header>
+
 <h1>🌱 LGC Smart Farm OS</h1>
 
-<h2>مرحباً بك</h2>
+<p>
+نظام إدارة المزرعة الذكية - Demo v0.2
+</p>
 
-<p>هذه أول نسخة من نظام إدارة المزرعة الذكية.</p>
+</header>
 
-<button onclick="welcome()">
-تشغيل التجربة
+
+<nav>
+
+<button>🏠 الرئيسية</button>
+<button>💧 الري</button>
+<button>☀ الطاقة</button>
+<button>🌿 المحاصيل</button>
+<button>🤖 الذكاء الاصطناعي</button>
+
+</nav>
+
+
+<section class="dashboard">
+
+
+<div class="card">
+
+<h3>💧 المياه</h3>
+
+<h2>82%</h2>
+
+<p>مستوى الخزان</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>☀ الطاقة</h3>
+
+<h2>91%</h2>
+
+<p>الطاقة الشمسية</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🌱 المحاصيل</h3>
+
+<h2>جيدة</h2>
+
+<p>حالة النمو</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>📡 الحساسات</h3>
+
+<h2>12</h2>
+
+<p>متصل الآن</p>
+
+</div>
+
+
+</section>
+
+
+<section class="panel">
+
+<h2>🤖 LGC AI Assistant</h2>
+
+<p>
+تحليل النظام:
+</p>
+
+<p>
+✅ المياه مستقرة
+<br>
+✅ الطاقة ممتازة
+<br>
+⚠ يوصى بري القطاع 02 خلال ساعتين
+</p>
+
+</section>
+
+
+<section class="panel">
+
+<h2>🚿 التحكم بالري</h2>
+
+<button onclick="irrigate()">
+تشغيل الري
 </button>
 
 <p id="result"></p>
+
+</section>
+
 
 <script src="app.js"></script>
 
